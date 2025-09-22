@@ -1,0 +1,5 @@
+{
+  "name": "Train Network Simulation",
+  "description": "A visually appealing simulation of a train network demonstrating conflict resolution based on train priority. Watch as different types of trains navigate a shared track, with higher priority trains getting the right of way.",
+  "requestFramePermissions": []
+}
