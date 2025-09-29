@@ -1,5 +1,5 @@
 {
-  "name": "Train Network Simulation",
-  "description": "A visually appealing simulation of a train network demonstrating conflict resolution based on train priority. Watch as different types of trains navigate a shared track, with higher priority trains getting the right of way.",
+  "name": "AI Train Network Simulation",
+  "description": "A visual simulation of a train network demonstrating AI-powered conflict resolution. Watch as trains of different priorities navigate shared tracks, with an AI system managing traffic, resolving conflicts, and ensuring all trains reach their destination. Features graceful arrivals and departures for a realistic experience.",
   "requestFramePermissions": []
 }

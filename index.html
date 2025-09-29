@@ -38,6 +38,27 @@
           filter: drop-shadow(0 0 10px currentColor) drop-shadow(0 0 15px #f59e0b); /* amber-500 */
         }
       }
+      /* New animation for conflicted trains */
+      .train-conflict-glow {
+        animation: train-conflict-pulse 1.5s ease-in-out infinite;
+      }
+      @keyframes train-conflict-pulse {
+        0%, 100% {
+          filter: drop-shadow(0 0 6px currentColor) drop-shadow(0 0 10px #ef4444); /* red-500 */
+        }
+        50% {
+          filter: drop-shadow(0 0 12px currentColor) drop-shadow(0 0 20px #ef4444); /* red-500 */
+        }
+      }
+      /* New animation for conflicted tracks */
+      .conflict-highlight-pulse {
+        animation: conflict-highlight-anim 1s ease-in-out infinite;
+        pointer-events: none;
+      }
+      @keyframes conflict-highlight-anim {
+        0%, 100% { stroke-opacity: 0.9; }
+        50% { stroke-opacity: 0.3; }
+      }
       .conflict-glow {
         animation: conflict-pulse 2.5s ease-in-out infinite;
       }
@@ -48,6 +69,33 @@
         50% {
           stroke-opacity: 0.7;
         }
+      }
+      @keyframes fade-in-down {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-down {
+        animation: fade-in-down 0.5s ease-out forwards;
+      }
+      /* New animation for alerts */
+      @keyframes slide-in-toast {
+        from {
+          opacity: 0;
+          transform: translateY(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slide-in-toast {
+        animation: slide-in-toast 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
       }
     </style>
   <script type="importmap">
